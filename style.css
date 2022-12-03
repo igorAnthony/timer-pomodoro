@@ -92,14 +92,10 @@ button:focus{
     transform: scale(1.25);
     transition: transform 0.5s ease-in;
 }
-.teste{
+.container-minutes-style{
     height: 30%;
     margin:2em;
-    padding-top:.5em;
-    padding-bottom: .5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-radius: .1em;
+    padding:1em 2em;
     box-shadow: 0 10px 5px 0 rgba(0, 0, 0, .1);
 }
 .btn2_style{
@@ -222,9 +218,7 @@ button:focus{
     #ContadorPomodoroFeitos{
         font-size: .5rem;
     }
-    h2{
-        font-size: 3rem;
-    }
+
     .btn2_style{
         font-size: .7rem;
     }
