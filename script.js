@@ -40,7 +40,6 @@ $(document).ready(function () {
         $("#btn-dcurto").css({ "background": "none" });
     });
     $("#btn1").click(function () {
-        console.log("entrei aq");
         if ($("#descanso_longo").val() != "" && $("#descanso_curto").val() != "" && $("#pomodoro_timer").val() != "") {
             $(".row-menu").fadeOut(1000);
             $("#timer").fadeIn(3000);
@@ -49,7 +48,7 @@ $(document).ready(function () {
 
             inicializaPomodoro();
         } else {
-            alert("De vazio só teu rabo, preenche isso ae");
+            alert("Existem campos vazios, não é possível iniciar o pomodoro sem ter definido todos os campos");
         }
     });
 
@@ -64,10 +63,10 @@ $(document).ready(function () {
 
     });
     $("#btn_pular").click(function () {
-        $("#time_descanso").hide();
-        inicializaPomodoro();
+        $("#time_descanso").fadeOut(1000);
+        $("#timer").fadeIn(3000);        inicializaPomodoro();
     });
-    $("#btn_cancelar").click(function () {
+    $("#btn_home").click(function () {
         $("#timer").fadeOut(1000);
         $("#time_descanso").fadeOut(1000);
         $("#tela_inicial").fadeIn(3000);
@@ -90,7 +89,7 @@ function inicializaPomodoro() {
 function iniciarTimerPomodoro(duration, nm_countdown) {
     var timer = duration, minutes, seconds;
     var snd = new Audio("./sounds/gtaSAMissionPassed.mp3");
-    console.log("entrou timer pomodoro");
+
     var intervalo = setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
@@ -105,9 +104,9 @@ function iniciarTimerPomodoro(duration, nm_countdown) {
         }
         if (minutes == 0 && seconds == 0) {
             clearInterval(intervalo);
-            console.log("contador:" + contador_pomodoro);
             contador_pomodoro++;
             preencheContador();
+
             if (result_checkbox.checked) {
                 inicializaDescanso();
             } else {
@@ -129,13 +128,12 @@ function iniciarTimerPomodoro(duration, nm_countdown) {
                 }
             }
         }
-
     }, 1000);
 }
 function iniciarTimerDescanso(duration, nm_countdown) {
     var timer = duration, minutes, seconds;
     var snd = new Audio("./sounds/gtaAhShit.mp3");
-    console.log("entrou timer descanso");
+
     var intervalo = setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
@@ -161,7 +159,6 @@ function iniciarTimerDescanso(duration, nm_countdown) {
                 $('#pergunta_descansoLongo').hide();
                 $('#gif_feliz').hide();
                 $('#pergunta_pomodoro').fadeIn(5000);
-                $('#btn3').hide();
             }
         }
 
