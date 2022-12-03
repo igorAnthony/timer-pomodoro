@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.bd{
+    background-color: red;
+}
+input{
+    text-align: center;
+}
+.form-control:focus, .form-group:focus {
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, .1);
+    border: 0 none;
+    outline: 0;
+} 
+body,html{
+    background: linear-gradient(rgba(2,0,36,1), rgba(186,29,62,1));
+    font-family: 'Silkscreen', cursive;
+    font-size: 1.2rem;
+    color:#ffffff;
+    height: 100%;
+    overflow: hidden;
+}
+label{
+    font-size: .7rem;
+}
+h1{
+    margin:0;
+    font-size: 1rem;
+}
+h2{
+    font-size: 1em;
+}
+button:focus{
+    outline: none;
+}
+.container-input{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+}
+.container-nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: .2em;
+    padding-bottom: .2em;
+    border-bottom: 1px solid #fff;
+}
+.row-menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-style{
+    background:transparent;  
+    border:none;  
+    font-size: 4rem;
+    border-radius: .1em;
+    color:#ffffff;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, .1);
+}
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-style:focus{
+    background:transparent;
+    border:none;
+    color:#000;
+}
+.container-btn{
+    width: 50%;
+    display: flex;
+    justify-content:space-around;
+}
+.btn-change-type{
+    font-size: 1rem;
+    font-weight: 400;
+    background: none;
+    border-radius: .3em;
+    padding:.25em .75em;
+    border: none;
+    color:#fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+.btn-change-type:active{
+    transform: scale(1.25);
+    transition: transform 0.5s ease-in;
+}
+.teste{
+    height: 30%;
+    margin:2em;
+    padding-top:.5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: .1em;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, .1);
+}
+.btn2_style{
+    color:#ffffff;
+    border:3px solid #ffffff;
+    font-size: .8em;
+    background:transparent;
+    padding:.75em;
+    transform: scale(0.9);
+    transition: 0.2s transform;
+}
+.btn2_style:hover{
+    transform:translate(5px, 5px)
+}
+.btn2_style:active{
+    background-color: #230445a2;
+}
+.navbar{
+    background-color: #525252;
+    background-color: #979797;
+}
+#btn1{
+    background:none;
+    border:none;
+    color:#ffffff;
+    transform: scale(1);
+    transition: 0.2s transform;
+}
+#btn1:hover{
+    transform: scale(0.8);
+}
+#timer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    font-size: 4rem;
+    border-radius: 15px;
+}
+#check-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0.2%;
+    left:0.2%;
+}
+
+#ContadorPomodoroFeitos{
+    position:absolute;
+    bottom: 0.2%;
+    right:0.2%;
+    font-size: .7rem;
+}
+#iniciaAutomatico{
+  all: unset;
+  margin-right: .3em;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 15px;
+  height: 15px;
+  background-color:#ffffff;
+}
+#iniciaAutomatico:checked{
+  background-color: rgba(2,0,36,1);
+  margin-right: .3em;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 15px;
+  height: 15px;
+}
+@media(max-width:1200px){
+    .btn-change-type{
+        font-size: .9rem;
+    }
+}
+@media(max-width:1000px){
+    
+    .container-btn{
+        width: 70%;
+    }
+    .btn-change-type{
+        font-size: .6rem;
+    }
+    .input-style{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+}
+@media(max-width:600px){
+    .container-principal{
+        height: 70%;
+    }
+    .container-input{
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .btn-change-type{
+        margin-bottom: .8em;
+    }
+    .container-btn{
+        width: 40%;
+        flex-direction: column;
+    }
+    label{
+        font-size: .5rem;
+    }
+    .input-style{
+        font-size: 3rem;
+    }
+    .font-style{
+        font-size: .8rem;
+    }
+    .label-input{
+        font-size: .7rem;
+    }
+    #ContadorPomodoroFeitos{
+        font-size: .5rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .btn2_style{
+        font-size: .7rem;
+    }
+}
