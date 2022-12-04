@@ -92,21 +92,10 @@ button:focus{
     transform: scale(1.25);
     transition: transform 0.5s ease-in;
 }
-<<<<<<< HEAD
-.teste{
-    height: 30%;
-    margin:2em;
-    padding-top:.5em;
-    padding-bottom: .5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-radius: .1em;
-=======
 .container-minutes-style{
     height: 30%;
     margin:2em;
     padding:1em 2em;
->>>>>>> 46cb6d5e2741765730ca1a36f0f4f82d795aa520
     box-shadow: 0 10px 5px 0 rgba(0, 0, 0, .1);
 }
 .btn2_style{
@@ -128,15 +117,6 @@ button:focus{
     background-color: #525252;
     background-color: #979797;
 }
-<<<<<<< HEAD
-.my-progress-bar{
-    position:absolute;
-}
-.progress-percentage{
-    display:none;
-}
-=======
->>>>>>> 46cb6d5e2741765730ca1a36f0f4f82d795aa520
 #btn1{
     background:none;
     border:none;
@@ -204,11 +184,7 @@ button:focus{
         font-size: 5rem;
     }
     h2{
-<<<<<<< HEAD
-        font-size: 4rem;
-=======
         font-size: 3rem;
->>>>>>> 46cb6d5e2741765730ca1a36f0f4f82d795aa520
     }
 }
 @media(max-width:600px){
@@ -233,12 +209,9 @@ button:focus{
     .input-style{
         font-size: 3rem;
     }
-<<<<<<< HEAD
-=======
     h2{
         font-size: 2.5rem;
     }
->>>>>>> 46cb6d5e2741765730ca1a36f0f4f82d795aa520
     .font-style{
         font-size: .8rem;
     }
@@ -248,13 +221,6 @@ button:focus{
     #ContadorPomodoroFeitos{
         font-size: .5rem;
     }
-<<<<<<< HEAD
-    h2{
-        font-size: 3rem;
-    }
-=======
-
->>>>>>> 46cb6d5e2741765730ca1a36f0f4f82d795aa520
     .btn2_style{
         font-size: .7rem;
     }
