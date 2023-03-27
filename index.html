@@ -1,91 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
-    <link rel="icon" href="" type="image/x-icon">
-    <title>Pomodoro</title>
+    <title>
+        este é meu site
+    </title>
 </head>
 
 <body>
+    <h1>
+            Mozilla is cool
+    </h1>
 
-    <div class="form-check p-0" id="check-box">
-        <input class="form-check-input" type="checkbox" value="" id="iniciaAutomatico" checked>
-        <label class="form-check-label" for="flexCheckChecked" style="height:100%;" id="label-checkbox">
-            Exec. automaticamente
-        </label>
-    </div>
-    <div id="ContadorPomodoroFeitos">
-        <label class="m-1"></label>
-    </div>
-    <div class="container-nav">
-        <h1>Pomodoro</h1>
-        <img src="./5.png" alt="logo" width="30px" >
-    </div>
-    <div class="container " style="height:100%;">
-            <div class="row row-menu" style="height:100%">
-                <div class="col d-flex justify-content-center align-items-center flex-column container-principal">
-                    <div class="container-btn mb-4">
-                        <button class="btn-change-type" style="background-color:#525252" id="btn-pomodoro">Pomodoro</button>
-                        <button class="btn-change-type" id="btn-dcurto">Desc. Curto</button>
-                        <button class="btn-change-type" id="btn-dlongo">Desc. Longo</button>
-                    </div>
-                    <div class="text-center container-input mb-2">
-                        <div class="col-4 p-0 m-0" id="pomodoro-display">
-                            <div class="form-group">
-                                <input type="descanso" class="form-control input-style" id="pomodoro_timer" value=25>
-                            </div>
-                        </div>
-                        <div class="col-4 p-0 m-0 " id="dcurto-display" style="display:none">
-                            <div class="form-group">
-                                <input type="descanso" class="form-control input-style" id="descanso_curto" value=5>
-                            </div>
-                        </div>
-                        <div class="col-4 p-0 m-0 " id="dlongo-display" style="display:none">
-                            <div class="form-group">
-                                <input type="descanso" class="form-control input-style" id="descanso_longo" value=15>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="container-input" id="btn1">INICIAR</button>
-                </div>
-            </div>
-            
+    <p>
+        At Mozilla, we’re a global community of
+    </p>
 
-        <div id="timer" class="row" style="display:none;height: 100%;">
-            <div class="teste container-input col-4">
-                <h2 id="minutes" class="text-center"></h2>
-            </div>   
-                
+    <ul>
+        <li>
+            <h2>
+                technologists
+            </h2>
+        </li>
+        <li>
+            thinkers
+        </li>
+        <li>
+            builders
+        </li>
+    </ul>
+
+    <p>
+        working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and
+        creators of the Web. We believe this act of human collaboration across an open platform is essential to
+        individual growth and our collective future.
+        <div> 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </div>
-
-        <div class="row justify-content-center text-center align-items-center" style="display:none;height: 100%;" id ="time_descanso">
-            <div class="col mt-3">
-                <img id='gif_feliz' src="" style="width:150px">
-                <div id="pergunta_descansoCurto"  class="font-style">Iniciar Descanso Curto ou Pular?</div>
-                <div id="pergunta_descansoLongo" class="font-style"></div>
-                <div id="pergunta_pomodoro" class="font-style">Iniciar o pomodoro?</div>
-                <button class="shadow btn2_style" id="btn_iniciar">INICIAR</button>
-                <button class="shadow btn2_style" id="btn_pular">PULAR</button>
-                <button class="shadow btn2_style" id="btn_home">HOME</button>
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
-        integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
-    <script src="./script.js"></script>
+    </p>
 </body>
+
 </html>
